@@ -1,0 +1,49 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1> COURSE REGISTATION FORM</h1>
+    <form>
+        <fieldset>
+          <legend> Personal Details</legend>
+          <table>
+            <tr><td><label>First Name</label></td><td><input type="text" name="FN" placeholder="Rohith" size="15" maxlength ="15"></td></tr>
+            <tr><td><label>Sur Name</label></td><td><input type="text" name="LN" placeholder="Muthuluru"size="15"Maxlength="15"></td></tr>
+            <tr><td><label>Mobile number</label></td><td><input type="tel" name="mob" placeholder="8657349065" size="15"></td></tr>
+            <tr><td><label>Email</label></td><td><input type="Email" name="mail" placeholder="rohithmuthuluru.net" size="15"></td></tr>
+            <tr><td><label>Password</label></td><td> <input type="password" name="pwd" placeholder="min 5 characters" size="15"></td></tr>
+            <tr><td><label>Confirm Passwod</label></td><td><input type="password" name="cwpwd" placeholder="min 5 characters" size="15"></td></tr>
+            <tr><td><label>DOB</label></td><td><input type="Date" name="dob"></td></tr>
+            <tr><td> <label>Gender</label></td><td><input type="radio" name="gender" value="m">Male<input type="radio" name="gender" value="F">female<input type="radio" name="gender" value="C">Custom</td></tr>
+            <tr><td><label>Select Country</label></td><td><select name="Country">
+                <option value="INDIA">INDIA</option>
+                <option value="USA">USA</option>
+                <option value="CHINA">CHINA</option>
+            </select></td></tr>
+            <tr><td><label> Upload Picture</label></td><td><input type="file" name="pic"></td></tr>
+            <tr><td><input type="reset"></td></tr>   
+        </table>
+       </fieldset>
+      <fieldset>
+        <legend>Course Details</legend>
+        <label>Select course</label>
+        <select name="Course">
+            <option value="PFS"> python full stack </option>
+            <option value="JFS">java full stack</optin>
+            <option value="PDS">python for data science</option>
+            <option value="CJ">core java</option>
+        </select><br>
+        <label>Delivery mode</label>
+        <input type="checkbox" name="mode 1" value="ON"> online
+        <input type="checkbox" name="mode 2" value="off"> offline<br>
+        <label>Comments</label><br>
+        <textarea rows="4" cols="40"></textarea>
+        </fieldset>
+        <button value="submit">Submit</button>
+    </form>
+  </body>
+  </html>
